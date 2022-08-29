@@ -12,4 +12,9 @@ export class SidebarComponent {
   get history() {
     return this.gifService.history;
   }
+
+  reSearch(item: string) {
+    this.gifService.searchGifs(item);
+  }
+
 }
